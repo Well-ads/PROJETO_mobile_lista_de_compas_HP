@@ -1,0 +1,94 @@
+/* Estilos CSS para o projeto da lista de compras */
+
+/* Adicionando gradiente suave como fundo */
+body {
+    background: linear-gradient(to bottom, #c7ec96, #6caeeb); /* Adiciona um gradiente de branco para um cinza claro */
+
+/* Estilos para o botão Adicionar */
+#addItemForm {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#addItemForm input[type="text"],
+#addItemForm input[type="number"],
+#addItemForm button[type="submit"] {
+    flex: 1;
+}
+
+/* Estilos para a tabela de compras */
+#shoppingList {
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#shoppingList th,
+#shoppingList td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+}
+
+#shoppingList tfoot .total {
+    font-weight: bold;
+    border-top: 2px solid #000;
+}
+
+/* Estilos para o botão Excluir */
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+/* Estilos para o botão de busca */
+#divBusca {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: solid 2px rgba(47, 79, 79, 0.8);
+    border-radius: 10px;
+    padding: 5px;
+    width: 400px;
+}
+
+#divBusca img {
+    margin-right: 5px;
+}
+
+#txtBusca {
+    flex: 1;
+    background-color: transparent;
+    padding-left: 5px;
+    font-size: 18px;
+    border: none;
+    height: 32px;
+}
+
+#btnBusca {
+    cursor: pointer;
+}
+
+/* Adicionando o símbolo de R$ no preço e no total */
+#shoppingList td:nth-child(4)::before,
+#shoppingList td:nth-child(3)::before,
+#shoppingList tfoot ::before {
+    content: "R$ ";
+}
+
+
+.vegetais-e-frutas-frescas-img {
+    max-width: 100%; /* Definindo o tamanho máximo da imagem como 100% para garantir que ela se ajuste ao contêiner */
+    height: auto; /* Mantenha a proporção da imagem */
+    display: block; /* Garantindo que a imagem se comporte como um bloco */
+    margin: 20px auto; /* Reduzindo a margem superior para 20px para trazer a imagem mais próxima do topo */
+}

@@ -1,0 +1,176 @@
+<<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#4D5360" />
+    <style>
+        /* Adicionando estilos CSS inline */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .vegetais-e-frutas-frescas-img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            width: 60%;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        button[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tbody tr:hover {
+            background-color: #f2f2f2;
+        }
+
+        .total {
+            font-weight: bold;
+            text-align: right;
+        }
+
+        .social-buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .social-buttons a {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .social-buttons a:hover {
+            background-color: #0056b3;
+        }
+
+        /* Estilos para o botão de busca */
+        #divBusca {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        #divBusca img {
+            width: 24px;
+            height: 24px;
+            margin-right: 5px;
+        }
+
+        #txtBusca {
+            padding: 10px;
+            width: 60%;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        #btnBusca {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Compras HortiFruti</h1>
+        <div id="divBusca">
+            <img src="search3.png" alt=""/>
+            <input type="text" id="txtBusca" placeholder="Buscar..."/>
+            <img src="search4.png" alt="Buscar..." id="btnBusca"/>
+        </div>
+        <img src="https://github.com/Well-ads/Mobile-atividades/raw/main/lista%20de%20compras/imagens/banca-de-vegetais-e-frutas-frescas.jpg" alt="banca de vegetais e frutas frescas" class="vegetais-e-frutas-frescas-img">
+        <form id="addItemForm">
+            <input type="text" id="itemInput" placeholder="Adicionar item à lista">
+            <input type="number" id="quantityInput" placeholder="Quantidade">
+            <input type="number" id="priceInput" placeholder="Preço">
+            <button type="submit">Adicionar</button>
+        </form>
+        <table id="shoppingList">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantidade</th>
+                    <th>Preço</th>
+                    <th>Total</th>
+                    <th><!-- Coluna extra para botão de exclusão --></th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Tabela será preenchida dinamicamente com os itens inseridos -->
+            </tbody>
+            <tfoot>
+                <tr class="total">
+                    <td colspan="3">Total:</td>
+                    <td id="totalValue">0.00</td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+        <div class="social-buttons">
+            <a href="https://api.whatsapp.com/send?phone=SEU_NUMERO_DE_TELEFONE" target="_blank">WhatsApp</a>
+            <a href="https://www.instagram.com/seu_usuario/" target="_blank">Instagram</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
