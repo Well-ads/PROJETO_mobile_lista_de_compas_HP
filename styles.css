@@ -11,6 +11,7 @@ body {
     margin-bottom: 20px;
 }
 
+
 #addItemForm input[type="text"],
 #addItemForm input[type="number"],
 #addItemForm button[type="submit"] {
@@ -81,7 +82,7 @@ body {
 /* Adicionando o símbolo de R$ no preço e no total */
 #shoppingList td:nth-child(4)::before,
 #shoppingList td:nth-child(3)::before,
-#shoppingList tfoot ::before {
+#shoppingList tfoot::before {
     content: "R$ ";
 }
 
