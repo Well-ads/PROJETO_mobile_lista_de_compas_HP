@@ -85,7 +85,6 @@ body {
     content: "R$ ";
 }
 
-
 .vegetais-e-frutas-frescas-img {
     max-width: 100%; /* Definindo o tamanho máximo da imagem como 100% para garantir que ela se ajuste ao contêiner */
     height: auto; /* Mantenha a proporção da imagem */
