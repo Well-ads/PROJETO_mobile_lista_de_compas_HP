@@ -8,7 +8,7 @@ body {
 #addItemForm {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 
@@ -20,9 +20,9 @@ body {
 
 /* Estilos para a tabela de compras */
 #shoppingList {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border-collapse: collapse;
-    width: 100%;
+    width: 60%;
 }
 
 #shoppingList th,
@@ -59,7 +59,7 @@ body {
     border: solid 2px rgba(47, 79, 79, 0.8);
     border-radius: 10px;
     padding: 5px;
-    width: 400px;
+    width: 200px;
 }
 
 #divBusca img {
@@ -70,9 +70,9 @@ body {
     flex: 1;
     background-color: transparent;
     padding-left: 5px;
-    font-size: 18px;
+    font-size: 10px;
     border: none;
-    height: 32px;
+    height: 22px;
 }
 
 #btnBusca {
@@ -87,8 +87,8 @@ body {
 }
 
 .vegetais-e-frutas-frescas-img {
-    max-width: 100%; /* Definindo o tamanho máximo da imagem como 100% para garantir que ela se ajuste ao contêiner */
+    max-width: 60%; /* Definindo o tamanho máximo da imagem como 100% para garantir que ela se ajuste ao contêiner */
     height: auto; /* Mantenha a proporção da imagem */
     display: block; /* Garantindo que a imagem se comporte como um bloco */
-    margin: 20px auto; /* Reduzindo a margem superior para 20px para trazer a imagem mais próxima do topo */
+    margin: 10px auto; /* Reduzindo a margem superior para 20px para trazer a imagem mais próxima do topo */
 }
